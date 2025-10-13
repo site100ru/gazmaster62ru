@@ -15,8 +15,8 @@ jobs:
           username: ${{ secrets.REGRU_USER }}
           key: ${{ secrets.REGRU_KEY }}
           script: |
-            cd /var/www/u1538455/data/www/gazmaster62.ru/wp-content/themes/gazmaster62ru
-            git clone git@github.com:site100ru/gazmaster62ru.git .
-            
             #cd /var/www/u1538455/data/www/gazmaster62.ru/wp-content/themes/gazmaster62ru
-            #git pull
+            #git clone git@github.com:site100ru/gazmaster62ru.git .
+            
+            cd /var/www/u1538455/data/www/gazmaster62.ru/wp-content/themes/gazmaster62ru
+            git pull
