@@ -16,11 +16,11 @@
 	<div class="container">
 		<div class="row">
 			<div class="col">
-				<h1 class="mb-3">Монтаж систем отопления</h1>
+				<h1 class="mb-3"><?php echo wp_get_document_title(); ?></h1>
 				<div class="breadcrumbs mb-4">
 					<a href="index.html"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/home-breadcrumbs.png"></a>
 					<span class="mx-1">/</span>
-					<span>Монтаж систем отопления</span>
+					<span><?php echo wp_get_document_title(); ?></span>
 				</div>
 				
 				
