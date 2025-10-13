@@ -592,5 +592,3 @@
 	}
 	add_action( 'customize_register', 'mytheme_customize_register' );
 	/*** END ДОБАВЛЯЕМ ВОЗМОЖНОСТЬ В НАСТРОЙКАХ ТЕМЫ ДОБАВИТЬ КОНТАКТЫ И КОД СЧЕТЧИКА ***/
-	
-?>
