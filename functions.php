@@ -605,3 +605,51 @@ function mytheme_customize_register($wp_customize)
 }
 add_action('customize_register', 'mytheme_customize_register');
 /*** END ДОБАВЛЯЕМ ВОЗМОЖНОСТЬ В НАСТРОЙКАХ ТЕМЫ ДОБАВИТЬ КОНТАКТЫ И КОД СЧЕТЧИКА ***/
+
+
+/*** ДЕЛАЕМ ПРАВИЛЬНЫЙ DESCRIPTION ДЛЯ КАЖДОЙ СТРАНИЦЫ ***/
+function echo_description()
+{
+
+    // Если страница стандартной категории поста
+    if (is_category()) {
+        echo wp_strip_all_tags(category_description());
+
+        // Если страница продукта woocommerce
+    } elseif (is_product()) {
+        $product = wc_get_product(get_the_ID());
+        $short_description = $product->get_short_description();
+        echo wp_strip_all_tags($short_description);
+
+        // Если страница категории продукта woocommerce
+    } elseif (is_product_category()) {
+        foreach (wp_get_post_terms(get_the_id(), 'product_cat') as $term) {
+            if ($term) {
+                //echo $term->name . '<br>'; // product category name
+                if ($term->description) {
+                    echo $term->description; // Product category description
+                }
+            }
+        }
+
+        // Если страница портфолио
+    } elseif (is_post_type_archive('portfolio')) {
+        echo 'Портфолио';
+
+        // Если страница категорий портфолио
+    } elseif (is_tax('portfolio-cat')) {
+        $term = get_queried_object(); // Получаем текущий термин
+        echo $term->description;
+        //echo 'Категория портфолио';
+
+        // Если страница магазина	
+    } elseif (is_shop()) {
+        $shop_page_id = wc_get_page_id('shop');
+        echo get_the_excerpt($shop_page_id);
+
+        // Если обычная страница
+    } else {
+        echo get_the_excerpt();
+    }
+}
+/*** END ДЕЛАЕМ ПРАВИЛЬНЫЙ DESCRIPTION ДЛЯ КАЖДОЙ СТРАНИЦЫ ***/

@@ -1433,6 +1433,10 @@ ul.oglavl span.page {
 	color: #323232;
 }
 
+.prices-section.bg-light td span {
+	background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
 .prices-section td span.price-discount {
 	background: white;
 	font-family: HelveticaNeueCyr-Medium;
@@ -2361,5 +2365,5 @@ footer {
 }
 
 .form-label {
-    font-family: HelveticaNeueCyr-Light;
+	font-family: HelveticaNeueCyr-Light;
 }
