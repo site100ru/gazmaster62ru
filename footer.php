@@ -9,72 +9,17 @@
 		                        <img id="navbar-brand-img" src="<?php echo get_template_directory_uri(); ?>/img/ico/logo.png">
 		                    </a>
 		                    <div class="collapse navbar-collapse" id="navbarSupportedContent3">
-		                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-		                            <li class="nav-item">
-		                                <a class="nav-link active" href="index.html">Главная</a>
-		                            </li>
-		                            <li class="nav-item d-none d-xl-inline">
-		                                <span class="nav-link px-1"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/menu-point.png"></span>
-		                            </li>
-		                            <li class="nav-item dropdown">
-		                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-		                                    Наши&nbsp;услуги
-		                                </a>
-		                                <ul class="dropdown-menu">
-		                                    <li><a class="dropdown-item" href="single-service.html">Отопление</a></li>
-		                                    <li><a class="dropdown-item" href="single-service.html">Водоснабжение</a></li>
-		                                    <li><a class="dropdown-item" href="single-service.html">Водоотведение</a></li>
-		                                    <li><a class="dropdown-item" href="single-service.html">Ремонт и обслуживание</a></li>
-		                                </ul>
-		                            </li>
-		                            <li class="nav-item">
-		                                <a class="nav-link" href="archive-product.html">Каталог&nbsp;товаров</a>
-		                            </li>
-		                            <li class="nav-item d-none d-xl-inline">
-		                                <span class="nav-link px-1"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/menu-point.png"></span>
-		                            </li>
-		                            <li class="nav-item">
-		                                <a class="nav-link" href="about-us.html">О&nbsp;нас</a>
-		                            </li>
-		                            <li class="nav-item d-none d-xl-inline">
-		                                <span class="nav-link px-1"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/menu-point.png"></span>
-		                            </li>
-		                            <li class="nav-item">
-		                                <a class="nav-link" href="portfolio.html">Наши&nbsp;работы</a>
-		                            </li>
-		                            <li class="nav-item d-none d-xl-inline">
-		                                <span class="nav-link px-1"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/menu-point.png"></span>
-		                            </li>
-		                            <li class="nav-item">
-		                                <a class="nav-link" href="#contacts-sp">Контакты</a>
-		                            </li>
-		                            <!-- Mobile menu -->
-		                            <li class="nav-item d-xl-none">
-		                                <a class="nav-link" href="#">Предварительный расчет</a>
-		                            </li>
-		                            <li class="nav-item d-xl-none">
-		                                <a class="nav-link" href="#">Вызвать инженера</a>
-		                            </li>
-		                            <li class="nav-item d-xl-none">
-		                                <a id="top-menu-tel" class="nav-link" href="tel:88008808088">8 (800) 880-80-88</a>
-		                            </li>
-
-
-		                            <li class="nav-item d-xl-none">
-		                                <!-- Whatsapp -->
-		                                <?php if (get_theme_mod('mytheme_whatsapp')) : ?>
-		                                    <a class="ico-button pe-2" href="<?php echo get_theme_mod('mytheme_whatsapp'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp-ico.png"></a>
-		                                <?php endif; ?>
-
-		                                <!-- Telegram -->
-		                                <?php if (get_theme_mod('mytheme_telegram')) : ?>
-		                                    <a class="ico-button pe-2" href="<?php echo get_theme_mod('mytheme_telegram'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.png"></a>
-		                                <?php endif; ?>
-		                                <!--a class="ico-button pe-2" href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/inst-ico.png"></a>
-										<a class="ico-button" href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/vk-ico.png"></a-->
-		                            </li>
-		                            <!-- End mobile menu -->
-		                        </ul>
+		                        <?php
+                                wp_nav_menu(array(
+                                    'theme_location' => 'main-menu',
+                                    'container' => false,
+                                    'menu_class' => 'navbar-nav ms-auto mb-2 mb-lg-0',
+                                    'fallback_cb' => '__return_false',
+                                    'items_wrap' => '<ul id="%1$s" class="navbar-nav ms-auto mb-2 mb-lg-0 %2$s">%3$s</ul>',
+                                    'depth' => 2,
+                                    'walker' => new bootstrap_5_wp_nav_menu_walker()
+                                ));
+                                ?>
 		                    </div>
 		                </nav>
 		            </div>
@@ -201,45 +146,28 @@
 		        <div class="col-lg-8 pt-4 pt-lg-2">
 		            <div class="row d-lg-none justify-content-center">
 		                <div class="col-6 left-col-footer-menu">
-		                    <ul id="menu-main-menu-2" class="navbar-nav ms-auto mb-lg-0">
-		                        <li class="nav-item">
-		                            <a class="nav-link" href="index.html">Главная</a>
-		                        </li>
-		                        <li class="nav-item">
-		                            <a class="nav-link" href="single-service.html">Отопление</a>
-		                        </li>
-		                        <li class="nav-item">
-		                            <a class="nav-link" href="single-service.html">Водоснабжение</a>
-		                        </li>
-		                        <li class="nav-item">
-		                            <a class="nav-link" href="single-service.html">Водоотведение</a>
-		                        </li>
-		                        <li class="nav-item">
-		                            <a class="nav-link" href="single-service.html">Ремонт&nbsp;и&nbsp;обслуживание</a>
-		                        </li>
-		                        <li class="nav-item">
-		                            <a class="nav-link" href="archive-product.html">Каталог&nbsp;товаров</a>
-		                        </li>
-		                    </ul>
+		                    <?php
+                            wp_nav_menu(array(
+                                'theme_location' => 'footer-menu-left',
+                                'container' => false,
+                                'menu_class' => 'navbar-nav ms-auto mb-lg-0',
+                                'fallback_cb' => '__return_false',
+                                'depth' => 1,
+                                'walker' => new bootstrap_5_wp_nav_menu_walker()
+                            ));
+                            ?>
 		                </div>
 		                <div class="col-6 right-col-footer-menu">
-		                    <ul id="menu-main-menu-3" class="navbar-nav ms-auto mb-lg-0">
-		                        <li class="nav-item">
-		                            <a class="nav-link" href="about-us.html">О&nbsp;нас</a>
-		                        </li>
-		                        <li class="nav-item">
-		                            <a class="nav-link" href="portfolio.html">Наши&nbsp;работы</a>
-		                        </li>
-		                        <li class="nav-item d-xl-none">
-		                            <a class="nav-link" href="#">Предварительный расчет</a>
-		                        </li>
-		                        <li class="nav-item d-xl-none">
-		                            <a class="nav-link" href="#">Вызвать инженера</a>
-		                        </li>
-		                        <li class="nav-item">
-		                            <a class="nav-link" href="#contacts-sp">Контакты</a>
-		                        </li>
-		                    </ul>
+		                    <?php
+                            wp_nav_menu(array(
+                                'theme_location' => 'footer-menu-right',
+                                'container' => false,
+                                'menu_class' => 'navbar-nav ms-auto mb-lg-0',
+                                'fallback_cb' => '__return_false',
+                                'depth' => 1,
+                                'walker' => new bootstrap_5_wp_nav_menu_walker()
+                            ));
+                            ?>
 		                </div>
 		            </div>
 		        </div>
@@ -274,7 +202,7 @@
 		<!-- Order Modal -->
 		<div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
 		    <div class="modal-dialog modal-dialog-centered">
-		        <form method="post" action="<?php echo get_template_directory_uri(); ?>/mails/order-mail.php" class="modal-content">
+		        <form id="order-form" class="protected-form modal-content" method="post" action="<?php echo get_template_directory_uri(); ?>/mails/order-mail.php">
 		            <div class="modal-header">
 		                <h2 class="modal-title fs-4" id="orderModalLabel">Расчет сметы или вызов инженера</h2>
 		                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -287,14 +215,30 @@
 		                </div>
 		                <div class="row">
 		                    <div class="col-md-6 mb-3 mb-md-0">
-		                        <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+		                        <input type="text" name="user_name" class="form-control" placeholder="Ваше имя*" required />
 		                    </div>
 		                    <div class="col-md-6">
-		                        <input type="text" name="tel" class="form-control telMask" placeholder="Ваш телефон*">
+		                        <input type="tel" name="tel" class="form-control telMask" placeholder="Ваш телефон*" required />
 		                    </div>
 		                </div>
+
+		                <!-- Honeypot -->
+		                <div style="position: absolute; left: -9999px; opacity: 0; pointer-events: none;" aria-hidden="true">
+		                    <input type="text" name="name" tabindex="-1" autocomplete="new-password" value="" />
+		                </div>
+
+		                <!-- Timestamp -->
+		                <input type="hidden" name="form_timestamp" value="" />
 		            </div>
 		            <div class="modal-footer">
+		                <div>
+		                    <div class="form-check">
+		                        <input class="form-check-input" type="checkbox" id="gridCheck" checked>
+		                        <label class="form-check-label" for="gridCheck">
+		                            <p class="mb-0"><small>Даю согласие на обработку персональных данных. Подробнее об обработке персональных данных в <a href="<?php echo get_template_directory_uri(); ?>/docs/Privacy-Policy.pdf" target="_blank">Политике конфиденциальности.</a></small></p>
+		                        </label>
+		                    </div>
+		                </div>
 		                <button type="submit" class="btn btn-corporate-color-1 mx-auto">Записаться</button>
 		            </div>
 		        </form>
@@ -302,6 +246,11 @@
 		</div>
 		<!-- /Order Modal -->
 
+		<!-- Сначала конфиг -->
+		<script src="<?php echo get_template_directory_uri(); ?>/js/form-config.js"></script>
+
+		<!-- Общий файл защиты формы -->
+		<script src="<?php echo get_template_directory_uri(); ?>/js/form-protection.js"></script>
 
 		<!-- Dounloads Bootstrap Bundle with Popper -->
 		<script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.bundle.min.js"></script>
@@ -358,10 +307,13 @@
 		<!-- Telephone number mask -->
 		<script src="<?php echo get_template_directory_uri(); ?>/js/inputmask.min.js"></script>
 		<script>
-		    var telMask = document.getElementsByClassName("telMask");
 		    var im = new Inputmask("+7(999)999-99-99");
-		    im.mask(telMask);
+		    document.querySelectorAll(".telMask").forEach(function(el) {
+		        im.mask(el);
+                console.log('el: ', el);
+		    });
 		</script>
+
 
 
 		<!-- Галерея -->
@@ -763,7 +715,7 @@
 		<!-- Callback Modal -->
 		<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
 		    <div class="modal-dialog modal-dialog-centered">
-		        <form method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/mails/callback-mail.php" class="modal-content">
+		        <form id="callback-modal-form" class="protected-form modal-content" method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/mails/callback-mail.php">
 		            <div class="modal-header">
 		                <h5 class="modal-title" id="callbackModalLabel">Обратный звонок</h5>
 		                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -776,12 +728,20 @@
 		                </div>
 		                <div class="row">
 		                    <div class="col-md-6 mb-3 mb-md-0">
-		                        <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+		                        <input type="text" name="user_name" class="form-control" placeholder="Ваше имя*" required>
 		                    </div>
 		                    <div class="col-md-6">
-		                        <input type="text" name="tel" class="form-control telMask" placeholder="Ваш телефон*" required>
+		                        <input type="tel" name="tel" class="form-control telMask" placeholder="Ваш телефон*" required />
 		                    </div>
 		                </div>
+
+		                <!-- Honeypot -->
+		                <div style="position: absolute; left: -9999px; opacity: 0; pointer-events: none;" aria-hidden="true">
+		                    <input type="text" name="name" tabindex="-1" autocomplete="new-password" value="" />
+		                </div>
+
+		                <!-- Timestamp -->
+		                <input type="hidden" name="form_timestamp" value="" />
 		            </div>
 		            <div class="modal-footer">
 		                <div>

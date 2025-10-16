@@ -156,6 +156,10 @@ p,
 	color: #b82020;
 }
 
+.contacts-section-2 small a {
+	font-size: 14px;
+}
+
 th,
 td {
 	border: 1px solid #c7c7c7;
@@ -322,6 +326,10 @@ small a {
 	font-family: HelveticaNeueCyr-Light;
 }
 
+.form-check-label small {
+	text-transform: none;
+}
+
 .form-check {
 	padding-left: 0;
 }
@@ -367,6 +375,16 @@ input[type='radio']:not(:checked) + label:before {
 input[type='checkbox']:checked + label:before,
 input[type='checkbox']:not(:checked) + label:before {
 	border-radius: 2px;
+}
+
+.form-check input[type='checkbox']:checked + label:before,
+.form-check input[type='checkbox']:not(:checked) + label:before {
+	top: 6px;
+}
+
+.form-check input[type='checkbox']:checked + label:after,
+.form-check input[type='checkbox']:not(:checked) + label:after {
+	top: 10px;
 }
 
 /* Для переключателей это будут просто небольшие круги */
@@ -521,8 +539,8 @@ input[type='radio']:checked + label:after {
 #navbarSupportedContent3 .nav-link,
 #navbarSupportedContent4 .nav-link,
 .footer-mobail-menu .nav-link,
-#menu-main-menu-2 .nav-link,
-#menu-main-menu-3 .nav-link {
+#menu-footer-menu-right .nav-link,
+#menu-footer-menu-left .nav-link {
 	font-family: HelveticaNeueCyr-Medium;
 	font-size: 14px;
 }
@@ -531,8 +549,8 @@ input[type='radio']:checked + label:after {
 #navbarSupportedContent3 .nav-link,
 #navbarSupportedContent4 .nav-link,
 .footer-mobail-menu .nav-link,
-#menu-main-menu-2 .nav-link,
-#menu-main-menu-3 .nav-link {
+#menu-footer-menu-right .nav-link,
+#menu-footer-menu-left .nav-link {
 	color: #d4d4d4;
 	/*text-transform: uppercase;*/
 }
@@ -1553,6 +1571,9 @@ footer {
 	margin: auto;
 }
 
+#message p {
+	color: white;
+}
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
 	.light {
@@ -1564,11 +1585,15 @@ footer {
 @media (max-width: 1199.98px) {
 }
 
+.btn-group {
+	display: flex;
+	align-items: stretch;
+}
 /* `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
 	/* Делаем группу кнопок из горизонтального положения в вертикальное */
 	.btn-group {
-		display: block;
+		align-items: flex-start;
 	}
 
 	.btn-group > .btn:not(:last-child):not(.dropdown-toggle) {
@@ -1798,6 +1823,11 @@ footer {
 
 	#company-in-footer {
 		font-size: 16px;
+	}
+
+	.btn-group {
+		flex-direction: column;
+		align-items: center;
 	}
 }
 

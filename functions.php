@@ -105,7 +105,14 @@ class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_menu
 
 
 // Register a new menu
-register_nav_menu('main-menu', 'Main menu');
+add_action('after_setup_theme', function () {
+    register_nav_menus([
+        'main-menu' => 'Main menu',
+        'footer-menu-left' => 'footer-menu-left',
+        'footer-menu-right' => 'footer-menu-right'
+    ]);
+});
+/* End register a new menu */
 
 
 /* BREADCRUMBS */

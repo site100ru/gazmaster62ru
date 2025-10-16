@@ -30,7 +30,11 @@
 
 		<!-- <title>Монтаж систем отопления, водоснабжения и водоотведения</title> -->
 
-        <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/ico/favicon-light-1.svg" type="image/x-icon" id="favicon">
+        <?php
+        if ( function_exists( 'wp_site_icon' ) ) {
+            wp_site_icon();
+        }
+        ?>
 
         <title><?php echo wp_get_document_title(); ?></title>
 

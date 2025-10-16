@@ -219,20 +219,34 @@ while (have_posts()) {
                         <h2>Оставить заявку</h2>
                         <p class="section-description mb-3">Вызвать инженера или нужна консультация? Оставьте заявку в форме ниже или напишите нам в мессенджер. Мы с Вами свяжемся в ближайшее время.</p>
                         <div class="section-title-decoration mb-5"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/section-title-decoration-image.png"></div>
-                        <form class="mb-3 mb-md-5" method="post" action="<?php echo get_template_directory_uri(); ?>/mails/callback-mail.php">
+                        <form id="callback-page-form" class="protected-form mb-3 mb-md-5" method="post" action="<?php echo get_template_directory_uri(); ?>/mails/callback-mail.php">
                             <div class="row justify-content-start">
                                 <div class="col-md-6">
                                     <label class="form-label">Ваше имя</label>
-                                    <input type="text" name="name" class="form-control-corporate-2" id="exampleFormControlInput1" placeholder="">
+                                    <input type="text" name="user_name" class="form-control-corporate-2" placeholder="Введите имя" required>
                                 </div>
                                 <div class="col-md-6">
                                     <label class="form-label">Ваш телефон</label>
-                                    <input type="text" name="tel" class="form-control-corporate-2 telMask" id="exampleFormControlInput2" required="" inputmode="text">
+                                    <input type="tel" name="tel" class="form-control-corporate-2 telMask" placeholder="+7 (___) ___-__-__" required inputmode="text">
                                 </div>
                                 <div class="col-md-6 mb-5 mb-md-0">
                                     <button type="submit" class="d-block w-100 btn btn-corporate-color-1">Оставить заявку</button>
                                 </div>
+                                <div class="mt-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck" checked>
+                                        <label class="form-check-label" for="gridCheck">
+                                            <p class="mb-0"><small>Даю согласие на обработку персональных данных. Подробнее об обработке персональных данных в <a href="<?php echo get_template_directory_uri(); ?>/docs/Privacy-Policy.pdf" target="_blank">Политике конфиденциальности.</a></small></p>
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
+
+                            <div style="position: absolute; left: -9999px; opacity: 0; pointer-events: none;" aria-hidden="true">
+                                <input type="text" name="name" tabindex="-1" autocomplete="new-password" value="" />
+                            </div>
+
+                            <input type="hidden" name="form_timestamp" value="" />
                         </form>
                         <div class="row">
                             <div class="col">
