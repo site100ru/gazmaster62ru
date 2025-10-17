@@ -9,8 +9,8 @@ $config = [
     'log_file' => __DIR__ . '/spam_log.txt',
     
     // Telegram настройки
-    'telegram_token' => '8421673223:AAE61ZHLO7gPCkIYbAF-PI-HrMVj2ZKsUeE',
-    'telegram_chat_id' => '-4913757404',
+    'telegram_token' => '7637946124:AAGtIRdbQVoNi82RVGvb6syTJ6ZQk3l5jOU',
+    'telegram_chat_id' => '-4796917309',
     
     'validation' => [
         'require_all_fields' => true,
@@ -62,6 +62,7 @@ $telegramMessage .= "Телефон: " . htmlspecialchars($formData['tel']) . "\
 $telegramMessage .= "\n---\n";
 $telegramMessage .= "IP: " . ($_SERVER['REMOTE_ADDR'] ?? 'unknown') . "\n";
 $telegramMessage .= "Дата: " . date('d.m.Y H:i:s');
+$telegramMessage .= "\nСтраница: " . ($_SERVER['HTTP_REFERER'] ?? 'неизвестно');
 
 // Отправка в Telegram
 $telegramUrl = "https://api.telegram.org/bot{$config['telegram_token']}/sendMessage?chat_id={$config['telegram_chat_id']}&text=" . urlencode($telegramMessage);
@@ -74,6 +75,7 @@ $emailMessage .= "Телефон: " . htmlspecialchars($formData['tel']) . "\n";
 $emailMessage .= "\n---\n";
 $emailMessage .= "IP: " . ($_SERVER['REMOTE_ADDR'] ?? 'unknown') . "\n";
 $emailMessage .= "Дата: " . date('d.m.Y H:i:s') . "\n";
+$emailMessage .= "Страница: " . ($_SERVER['HTTP_REFERER'] ?? 'неизвестно') . "\n";
 
 $headers = "From: noreply@" . $_SERVER['HTTP_HOST'] . "\r\n";
 $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";

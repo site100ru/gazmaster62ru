@@ -304,15 +304,6 @@
 		</script>
 
 
-		<!-- Telephone number mask -->
-		<script src="<?php echo get_template_directory_uri(); ?>/js/inputmask.min.js"></script>
-		<script>
-		    var im = new Inputmask("+7(999)999-99-99");
-		    document.querySelectorAll(".telMask").forEach(function(el) {
-		        im.mask(el);
-                console.log('el: ', el);
-		    });
-		</script>
 
 
 
@@ -759,6 +750,16 @@
 		    </div>
 		</div>
 		<!-- /Callback Modal -->
+
+        <!-- Telephone number mask -->
+		<script src="<?php echo get_template_directory_uri(); ?>/js/inputmask.min.js"></script>
+		<script>
+		    var im = new Inputmask("+7 (999) 999-99-99");
+		    document.querySelectorAll(".telMask").forEach(function(el) {
+		        im.mask(el);
+		    });
+		</script>
+
 		</body>
 
 		</html>

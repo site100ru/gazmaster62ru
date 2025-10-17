@@ -25,7 +25,7 @@ get_header();
                 </div>
 
 
-                <button data-bs-toggle="modal" data-bs-target="#orderModal" class="btn btn-lg btn-corporate-color-1">Предварительный расчет</button>
+                <button data-bs-toggle="modal" data-bs-target="#callbackModal" class="btn btn-lg btn-corporate-color-1">Оставить заявку</button>
             </div>
         </div>
     </div>
@@ -215,8 +215,8 @@ while (have_posts()) {
             <div class="col-lg-10" style="position: relative;">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/ico/order-section-men.png" class="d-none d-lg-block" style="max-width: 425px; position: absolute; bottom: -300px; left: 50px;">
                 <div class="row">
-                    <div class="col-lg-5 offset-lg-7 text-dark">
-                        <h2>Оставить заявку</h2>
+                    <div class="col-lg-6 offset-lg-7 text-dark">
+                        <h2>Оставить завку</h2>
                         <p class="section-description mb-3">Вызвать инженера или нужна консультация? Оставьте заявку в форме ниже или напишите нам в мессенджер. Мы с Вами свяжемся в ближайшее время.</p>
                         <div class="section-title-decoration mb-5"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/section-title-decoration-image.png"></div>
                         <form id="callback-page-form" class="protected-form mb-3 mb-md-5" method="post" action="<?php echo get_template_directory_uri(); ?>/mails/callback-mail.php">
@@ -229,7 +229,7 @@ while (have_posts()) {
                                     <label class="form-label">Ваш телефон</label>
                                     <input type="tel" name="tel" class="form-control-corporate-2 telMask" placeholder="+7 (___) ___-__-__" required inputmode="text">
                                 </div>
-                                <div class="col-md-6 mb-5 mb-md-0">
+                                <div class="col-md-6 mb-5 mb-md-0 mt-3">
                                     <button type="submit" class="d-block w-100 btn btn-corporate-color-1">Оставить заявку</button>
                                 </div>
                                 <div class="mt-3">

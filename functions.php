@@ -660,3 +660,5 @@ function echo_description()
     }
 }
 /*** END ДЕЛАЕМ ПРАВИЛЬНЫЙ DESCRIPTION ДЛЯ КАЖДОЙ СТРАНИЦЫ ***/
+
+require_once get_template_directory() . '/inc/transliteration.php';

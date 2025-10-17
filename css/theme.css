@@ -2326,7 +2326,7 @@ footer {
 
 .accordion-button {
 	color: var(--dark-color) !important;
-	font-family: HelveticaNeueCyr-Bold;
+	font-family: HelveticaNeueCyr-Medium;
 	font-size: 20px;
 	background-color: #f8f9fa;
 	border-radius: 5px;
@@ -2358,7 +2358,7 @@ footer {
 
 .accordion-body p,
 .accordion-body li {
-	font-family: Gilroy-Light;
+	font-family: HelveticaNeueCyr-Light;
 }
 
 .accordion-button::after,
@@ -2391,7 +2391,6 @@ footer {
 	transition:
 		border-color 0.15s ease-in-out,
 		box-shadow 0.15s ease-in-out;
-	margin-bottom: 20px;
 }
 
 .form-label {
