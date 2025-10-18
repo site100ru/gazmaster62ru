@@ -56,7 +56,7 @@ if (!$validation['valid']) {
 }
 
 // Формируем сообщение для Telegram
-$telegramMessage = "🔧 Заявка на расчет сметы или вызов инженера с сайта geometriyasten62.ru\n\n";
+$telegramMessage = "🔧 Заявка на расчет сметы или вызов инженера с сайта gazmaster62.ru\n\n";
 $telegramMessage .= "Имя: " . htmlspecialchars($formData['user_name']) . "\n";
 $telegramMessage .= "Телефон: " . htmlspecialchars($formData['tel']) . "\n";
 $telegramMessage .= "\n---\n";

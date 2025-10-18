@@ -25,7 +25,7 @@ get_header();
                 </div>
 
 
-                <button data-bs-toggle="modal" data-bs-target="#callbackModal" class="btn btn-lg btn-corporate-color-1">Оставить заявку</button>
+                <button data-bs-toggle="modal" data-bs-target="#contactModal" class="btn btn-lg btn-corporate-color-1">Оставить заявку</button>
             </div>
         </div>
     </div>
