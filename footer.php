@@ -314,19 +314,27 @@
 		        <div class="carousel-indicators">
 		            <button id="ind-1-1" class="carouselIndicator carouselIndicatorClass" type="button" data-bs-target="#gallery-1" data-bs-slide-to="0" aria-label="Slide 1"></button>
 		            <button id="ind-1-2" class="carouselIndicator carouselIndicatorClass" type="button" data-bs-target="#gallery-1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button id="ind-1-2" class="carouselIndicator carouselIndicatorClass" type="button" data-bs-target="#gallery-1" data-bs-slide-to="2" aria-label="Slide 3"></button>
 		        </div>
 		        <div class="carousel-inner h-100">
 		            <div id="item-1-1" class="carousel-item carouselItemClass h-100">
 		                <div class="row align-items-center h-100">
 		                    <div class="col text-center">
-		                        <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-img-1.jpg" class="img-fluid" style="max-width: 75vw; max-height: 75vh;">
+		                        <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/1-1.webp" class="img-fluid" style="max-width: 75vw; max-height: 75vh;">
 		                    </div>
 		                </div>
 		            </div>
 		            <div id="item-1-2" class="carousel-item carouselItemClass h-100">
 		                <div class="row align-items-center h-100">
 		                    <div class="col text-center">
-		                        <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-img-2.jpg" class="img-fluid" style="max-width: 75vw; max-height: 75vh;">
+		                        <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/1-2.webp" class="img-fluid" style="max-width: 75vw; max-height: 75vh;">
+		                    </div>
+		                </div>
+		            </div>
+					<div id="item-1-3" class="carousel-item carouselItemClass h-100">
+		                <div class="row align-items-center h-100">
+		                    <div class="col text-center">
+		                        <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/1-3.webp" class="img-fluid" style="max-width: 75vw; max-height: 75vh;">
 		                    </div>
 		                </div>
 		            </div>
