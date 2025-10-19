@@ -79,28 +79,70 @@
 				<div class="row justify-content-center">
 					<div class="col-md-4 mb-5">
 						<div class="approximation shadow rounded">
-							<a href="https://gazmaster62.ru/service/монтаж-систем-отопления/">
+							<a href="https://gazmaster62.ru/service/montazh-sistem-otopleniya/">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/product-cat-img-1.jpg" alt="">
 								<div class="card-wrapper">
 									<!--div class="flag">
 										<div class="flag-old-price">100 руб</div>
 										<div class="flag-price">200 руб</div>
 									</div-->
-									<h3>Монтаж систем отопления, водоснабжения и водоотведения</h3>
+									<h3>Монтаж систем отопления</h3>
 								</div>
 							</a>
 						</div>
 					</div>
 					<div class="col-md-4 mb-5">
 						<div class="approximation shadow rounded">
-							<a href="https://gazmaster62.ru/service/монтаж-систем-отопления/">
+							<a href="https://gazmaster62.ru/service/montazh-sistem-vodosnabzheniya/">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/product-cat-img-2.jpg" alt="">
 								<div class="card-wrapper">
 									<!--div class="flag">
 										<div class="flag-old-price">100 руб</div>
 										<div class="flag-price">200 руб</div>
 									</div-->
-									<h3>Системы водоочистки</h3>
+									<h3>Монтаж систем водоснабжения</h3>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 mb-5">
+						<div class="approximation shadow rounded">
+							<a href="https://gazmaster62.ru/service/montazh-sistem-vodootvedeniya/">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/vodootvedenie.jpg" alt="">
+								<div class="card-wrapper">
+									<!--div class="flag">
+										<div class="flag-old-price">100 руб</div>
+										<div class="flag-price">200 руб</div>
+									</div-->
+									<h3>Монтаж систем водоотведения</h3>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 mb-5">
+						<div class="approximation shadow rounded">
+							<a href="https://gazmaster62.ru/service/sistemy-vodoochistki/">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/vodoochistka.jpg" alt="">
+								<div class="card-wrapper">
+									<!--div class="flag">
+										<div class="flag-old-price">100 руб</div>
+										<div class="flag-price">200 руб</div>
+									</div-->
+									<h3>Монтаж систем водоочистки</h3>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 mb-5">
+						<div class="approximation shadow rounded">
+							<a href="https://gazmaster62.ru/service/remont-and-obsluzhivanie/">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/product-cat-img-6.jpg" alt="">
+								<div class="card-wrapper">
+									<!--div class="flag">
+										<div class="flag-old-price">100 руб</div>
+										<div class="flag-price">200 руб</div>
+									</div-->
+									<h3>Техническое обслуживание и ремонт</h3>
 								</div>
 							</a>
 						</div>
@@ -114,49 +156,7 @@
 										<div class="flag-old-price">100 руб</div>
 										<div class="flag-price">200 руб</div>
 									</div-->
-									<h3>Продажа запчастей для котлов</h3>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-4 mb-5">
-						<div class="approximation shadow rounded">
-							<a href="https://gazmaster62.ru/catalog/">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/product-cat-img-4.jpg" alt="">
-								<div class="card-wrapper">
-									<!--div class="flag">
-										<div class="flag-old-price">100 руб</div>
-										<div class="flag-price">200 руб</div>
-									</div-->
-									<h3>Продажа отопительного оборудования</h3>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-4 mb-5">
-						<div class="approximation shadow rounded">
-							<a href="https://gazmaster62.ru/catalog/">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/product-cat-img-5.jpg" alt="">
-								<div class="card-wrapper">
-									<!--div class="flag">
-										<div class="flag-old-price">100 руб</div>
-										<div class="flag-price">200 руб</div>
-									</div-->
-									<h3>Продажа запчастей для отопительного оборудования</h3>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-4 mb-5">
-						<div class="approximation shadow rounded">
-							<a href="https://gazmaster62.ru/service/ремонт-и-обслуживание/">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/product-cat-img-6.jpg" alt="">
-								<div class="card-wrapper">
-									<!--div class="flag">
-										<div class="flag-old-price">100 руб</div>
-										<div class="flag-price">200 руб</div>
-									</div-->
-									<h3>Техническое обслуживание и ремонт котлов отопления</h3>
+									<h3>Продажа отопительного оборудования и запчастей</h3>
 								</div>
 							</a>
 						</div>
@@ -186,7 +186,7 @@
 									<div class="carousel-item active">
 										<a onClick="galleryOn( 'gal-1', 'img-1-1' );">	
 											<div class="light">
-												<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-img-1.jpg" class="d-block w-100" alt="...">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/1-1.webp" class="d-block w-100" alt="...">
 												<div class="magnifier"></div>
 											</div>
 										</a>
@@ -194,7 +194,15 @@
 									<div class="carousel-item">
 										<a onClick="galleryOn('gal-1','img-1-2');">	
 											<div class="light">
-												<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-img-2.jpg" class="d-block w-100 lazyload" loading="lazy" alt="...">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/1-2.webp" class="d-block w-100 lazyload" loading="lazy" alt="...">
+												<div class="magnifier"></div>
+											</div>
+										</a>
+									</div>
+									<div class="carousel-item">
+										<a onClick="galleryOn('gal-1','img-1-3');">	
+											<div class="light">
+												<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/1-3.webp" class="d-block w-100 lazyload" loading="lazy" alt="...">
 												<div class="magnifier"></div>
 											</div>
 										</a>
@@ -213,16 +221,20 @@
 					</div>
 					
 					<div class="col-md-6">
-						<h3>Монтаж системы отопления в кирпичном доме 250 кв.м.</h3>
+						<h3>Монтаж системы отопления в частном доме</h3>
 						<h5>Что сделано:</h5>
 						<ul>
-							<li>Монтаж газового котла отопления</li>
-							<li>Монтаж системы водоочистки</li>
-							<li>Монтаж системы водоотведения</li>
+							<li>Монтаж котла Baxi.</li>
+							<li>Монтаж бойлера Drazice.</li>
+							<li>Монтаж насоса Grundfos.</li>
+							<li>Монтаж источника бесперебойного питания CyberPower.</li>
+							<li>Монтаж расширительных баков Reflex.</li>
+							<li>Монтаж запорной арматуры Stout Itap Watts.</li>
+							<li>Монтаж трубопровода Kalde.</li>
 						</ul>
-						<h5>Сроки выполнения работ: <span>61 день</span></h5>
+						<!--h5>Сроки выполнения работ: <span>61 день</span></h5>
 						<h5>Стоимость работ: <span>250 000 руб</span></h5>
-						<h5>Стоимость оборудования: <span>625 000 руб</span></h5>
+						<h5>Стоимость оборудования: <span>625 000 руб</span></h5-->
 					</div>
 				</div>
 				
