@@ -180,6 +180,9 @@
 		                <div class="col text-center py-2">
 		                    <div id="company-in-footer">©<?php echo date('Y'); ?> ООО «Орион» | ИНН 6229039979</div>
 		                    <div id="im-in-footer">Создание и продвижение сайтов: <a href="https://site100.ru" class="text-light">site100.ru</a></div>
+                            <div class="policy-in-footer">
+								<a href="https://dekorsever.ru/wp-content/themes/dekorsever-wp/docs/Privacy-Policy.pdf" target="_blank">Политика конфиденциальности</a> | <a href="https://dekorsever.ru/wp-content/themes/dekorsever-wp/docs/Consent-to-the-processing-of-personal-data.pdf" target="_blank">Согласие на обработку персональных данных</a>
+							</div>
 		                </div>
 		            </div>
 		        </div>
