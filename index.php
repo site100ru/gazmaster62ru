@@ -79,70 +79,56 @@
 				<div class="row justify-content-center">
 					<div class="col-md-4 mb-5">
 						<div class="approximation shadow rounded">
-							<a href="https://gazmaster62.ru/service/монтаж-систем-отопления/">
+							<a href="https://gazmaster62.ru/service/montazh-sistem-otopleniya/">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/product-cat-img-1.jpg" alt="">
 								<div class="card-wrapper">
 									<!--div class="flag">
 										<div class="flag-old-price">100 руб</div>
 										<div class="flag-price">200 руб</div>
 									</div-->
-									<h3>Монтаж систем отопления, водоснабжения и водоотведения</h3>
+									<h3>Монтаж систем отопления</h3>
 								</div>
 							</a>
 						</div>
 					</div>
 					<div class="col-md-4 mb-5">
 						<div class="approximation shadow rounded">
-							<a href="https://gazmaster62.ru/service/монтаж-систем-отопления/">
+							<a href="https://gazmaster62.ru/service/montazh-sistem-vodosnabzheniya/">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/product-cat-img-2.jpg" alt="">
 								<div class="card-wrapper">
 									<!--div class="flag">
 										<div class="flag-old-price">100 руб</div>
 										<div class="flag-price">200 руб</div>
 									</div-->
-									<h3>Системы водоочистки</h3>
+									<h3>Монтаж систем водоснабжения</h3>
 								</div>
 							</a>
 						</div>
 					</div>
 					<div class="col-md-4 mb-5">
 						<div class="approximation shadow rounded">
-							<a href="https://gazmaster62.ru/catalog/">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/product-cat-img-3.jpg" alt="">
+							<a href="https://gazmaster62.ru/service/montazh-sistem-vodootvedeniya/">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/vodootvedenie.jpg" alt="">
 								<div class="card-wrapper">
 									<!--div class="flag">
 										<div class="flag-old-price">100 руб</div>
 										<div class="flag-price">200 руб</div>
 									</div-->
-									<h3>Продажа запчастей для котлов</h3>
+									<h3>Монтаж систем водоотведения</h3>
 								</div>
 							</a>
 						</div>
 					</div>
 					<div class="col-md-4 mb-5">
 						<div class="approximation shadow rounded">
-							<a href="https://gazmaster62.ru/catalog/">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/product-cat-img-4.jpg" alt="">
+							<a href="https://gazmaster62.ru/service/sistemy-vodoochistki/">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/vodoochistka.jpg" alt="">
 								<div class="card-wrapper">
 									<!--div class="flag">
 										<div class="flag-old-price">100 руб</div>
 										<div class="flag-price">200 руб</div>
 									</div-->
-									<h3>Продажа отопительного оборудования</h3>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-4 mb-5">
-						<div class="approximation shadow rounded">
-							<a href="https://gazmaster62.ru/catalog/">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/product-cat-img-5.jpg" alt="">
-								<div class="card-wrapper">
-									<!--div class="flag">
-										<div class="flag-old-price">100 руб</div>
-										<div class="flag-price">200 руб</div>
-									</div-->
-									<h3>Продажа запчастей для отопительного оборудования</h3>
+									<h3>Монтаж систем водоочистки</h3>
 								</div>
 							</a>
 						</div>
@@ -156,7 +142,21 @@
 										<div class="flag-old-price">100 руб</div>
 										<div class="flag-price">200 руб</div>
 									</div-->
-									<h3>Техническое обслуживание и ремонт котлов отопления</h3>
+									<h3>Техническое обслуживание и ремонт</h3>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 mb-5">
+						<div class="approximation shadow rounded">
+							<a href="https://gazmaster62.ru/catalog/">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/product-cat-img-3.jpg" alt="">
+								<div class="card-wrapper">
+									<!--div class="flag">
+										<div class="flag-old-price">100 руб</div>
+										<div class="flag-price">200 руб</div>
+									</div-->
+									<h3>Продажа отопительного оборудования и запчастей</h3>
 								</div>
 							</a>
 						</div>
