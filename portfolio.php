@@ -35,149 +35,90 @@
 	<div class="container">
 		<div class="row">
 			<div class="col">
-				<div class="row mb-5">
-					<div class="col-md-6 mb-3 mb-md-0">
-						<div id="carouselExampleControls-1" class="carousel slide" data-bs-ride="false"  data-bs-interval="false">
-							<div class="carousel-inner shadow rounded">
-								<div class="carousel-inner shadow rounded">
-									<div class="carousel-item active">
-										<a onClick="galleryOn( 'gal-1', 'img-1-1' );">	
-											<div class="light">
-												<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-img-1.jpg" class="d-block w-100" alt="...">
-												<div class="magnifier"></div>
-											</div>
-										</a>
-									</div>
-									<div class="carousel-item">
-										<a onClick="galleryOn('gal-1','img-1-2');">	
-											<div class="light">
-												<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-img-2.jpg" class="d-block w-100 lazyload" loading="lazy" alt="...">
-												<div class="magnifier"></div>
-											</div>
-										</a>
-									</div>
-								</div>
-							</div>
-							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-1"  data-bs-slide="prev">
-								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-								<span class="visually-hidden">Previous</span>
-							</button>
-							<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-1"  data-bs-slide="next">
-								<span class="carousel-control-next-icon" aria-hidden="true"></span>
-								<span class="visually-hidden">Next</span>
-							</button>
-						</div>
-					</div>
-					
-					<div class="col-md-6">
-						<h3>Монтаж системы отопления в кирпичном доме 250 кв.м.</h3>
-						<h5>Что сделано:</h5>
-						<ul>
-							<li>Монтаж газового котла отопления</li>
-							<li>Монтаж системы водоочистки</li>
-							<li>Монтаж системы водоотведения</li>
-						</ul>
-						<h5>Сроки выполнения работ: <span>61 день</span></h5>
-						<h5>Стоимость работ: <span>250 000 руб</span></h5>
-						<h5>Стоимость оборудования: <span>625 000 руб</span></h5>
-					</div>
+				<h2>Наши работы</h2>
+				<div class="section-title-decoration text-center mb-5">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/ico/section-title-decoration-image.png" alt="Decoration">
 				</div>
+
+				<?php
+				// Запрос для получения всех работ из портфолио
+				$args = array(
+					'post_type' => 'portfolio',
+					'posts_per_page' => -1, // Выводим все записи
+					'orderby' => 'date',
+					'order' => 'DESC'
+				);
 				
-				<div class="row mb-5">
-					<div class="col-md-6 mb-3 mb-md-0">
-						<div id="carouselExampleControls-2" class="carousel slide" data-bs-ride="false"  data-bs-interval="false">
-							<div class="carousel-inner shadow rounded">
-								<div class="carousel-inner shadow rounded">
-									<div class="carousel-item active">
-										<a onClick="galleryOn( 'gal-2', 'img-2-1' );">	
-											<div class="light">
-												<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-img-2.jpg" class="d-block w-100" alt="...">
-												<div class="magnifier"></div>
-											</div>
-										</a>
-									</div>
-									<div class="carousel-item">
-										<a onClick="galleryOn('gal-2','img-2-2');">	
-											<div class="light">
-												<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-img-3.jpg" class="d-block w-100 lazyload" loading="lazy" alt="...">
-												<div class="magnifier"></div>
-											</div>
-										</a>
-									</div>
-								</div>
-							</div>
-							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-2"  data-bs-slide="prev">
-								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-								<span class="visually-hidden">Previous</span>
-							</button>
-							<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-2"  data-bs-slide="next">
-								<span class="carousel-control-next-icon" aria-hidden="true"></span>
-								<span class="visually-hidden">Next</span>
-							</button>
-						</div>
-					</div>
-					
-					<div class="col-md-6">
-						<h3>Монтаж системы отопления в кирпичном доме 250 кв.м.</h3>
-						<h5>Что сделано:</h5>
-						<ul>
-							<li>Монтаж газового котла отопления</li>
-							<li>Монтаж системы водоочистки</li>
-							<li>Монтаж системы водоотведения</li>
-						</ul>
-						<h5>Сроки выполнения работ: <span>61 день</span></h5>
-						<h5>Стоимость работ: <span>250 000 руб</span></h5>
-						<h5>Стоимость оборудования: <span>625 000 руб</span></h5>
-					</div>
-				</div>
+				$portfolio_query = new WP_Query($args);
 				
-				<div class="row mb-5">
-					<div class="col-md-6 mb-3 mb-md-0">
-						<div id="carouselExampleControls-3" class="carousel slide" data-bs-ride="false"  data-bs-interval="false">
-							<div class="carousel-inner shadow rounded">
-								<div class="carousel-inner shadow rounded">
-									<div class="carousel-item active">
-										<a onClick="galleryOn( 'gal-3', 'img-3-1' );">	
-											<div class="light">
-												<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-img-3.jpg" class="d-block w-100" alt="...">
-												<div class="magnifier"></div>
+				if ($portfolio_query->have_posts()) :
+					$portfolio_counter = 0;
+					
+					while ($portfolio_query->have_posts()) : $portfolio_query->the_post();
+						$portfolio_counter++;
+						$post_id = get_the_ID();
+						
+						// Получаем изображения из метаполей
+						$images = array();
+						for ($i = 1; $i <= 9; $i++) {
+							$img_url = get_post_meta($post_id, '_img-' . $i, true);
+							if (!empty($img_url)) {
+								$images[] = $img_url;
+							}
+						}
+						
+						// Если нет изображений, используем миниатюру поста или дефолтные
+                        if (has_post_thumbnail()) {
+                            $thumbnail_id = get_post_thumbnail_id($post_id);
+                            $images[] = wp_get_attachment_image_url($thumbnail_id, 'full');
+						}
+						
+						// Ограничиваем до первых 9 изображений для галереи
+						$images = array_slice($images, 0, 9);
+						?>
+						
+						<div class="row mb-5">
+							<div class="col-md-6 mb-3 mb-md-0">
+								<div id="carouselExampleControls-<?php echo $portfolio_counter; ?>" class="carousel slide" data-bs-ride="false" data-bs-interval="false">
+									<div class="carousel-inner shadow rounded">
+										<?php foreach ($images as $index => $image_url) : ?>
+											<div class="carousel-item <?php echo $index === 0 ? 'active' : ''; ?>">
+												<a href="#" data-bs-toggle="modal" data-bs-target="#portfolioModal<?php echo $portfolio_counter; ?>" data-slide-index="<?php echo $index; ?>" class="portfolio-image-link">
+													<div class="light">
+														<img src="<?php echo esc_url($image_url); ?>" class="d-block w-100 <?php echo $index > 0 ? 'lazyload' : ''; ?>" <?php echo $index > 0 ? 'loading="lazy"' : ''; ?> alt="<?php echo esc_attr(get_the_title()); ?>">
+														<div class="magnifier"></div>
+													</div>
+												</a>
 											</div>
-										</a>
+										<?php endforeach; ?>
 									</div>
-									<div class="carousel-item">
-										<a onClick="galleryOn('gal-3','img-3-2');">	
-											<div class="light">
-												<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-img-1.jpg" class="d-block w-100 lazyload" loading="lazy" alt="...">
-												<div class="magnifier"></div>
-											</div>
-										</a>
-									</div>
+									
+									<?php if (count($images) > 1) : ?>
+										<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-<?php echo $portfolio_counter; ?>" data-bs-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Previous</span>
+										</button>
+										<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-<?php echo $portfolio_counter; ?>" data-bs-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Next</span>
+										</button>
+									<?php endif; ?>
 								</div>
 							</div>
-							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-3"  data-bs-slide="prev">
-								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-								<span class="visually-hidden">Previous</span>
-							</button>
-							<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-3"  data-bs-slide="next">
-								<span class="carousel-control-next-icon" aria-hidden="true"></span>
-								<span class="visually-hidden">Next</span>
-							</button>
+							
+							<div class="col-md-6">
+								<h3><?php the_title(); ?></h3>
+								
+								<?php if (get_the_content()) : ?>
+									<?php the_content(); ?>
+								<?php endif; ?>
+							</div>
 						</div>
-					</div>
-					
-					<div class="col-md-6">
-						<h3>Монтаж системы отопления в кирпичном доме 250 кв.м.</h3>
-						<h5>Что сделано:</h5>
-						<ul>
-							<li>Монтаж газового котла отопления</li>
-							<li>Монтаж системы водоочистки</li>
-							<li>Монтаж системы водоотведения</li>
-						</ul>
-						<h5>Сроки выполнения работ: <span>61 день</span></h5>
-						<h5>Стоимость работ: <span>250 000 руб</span></h5>
-						<h5 class="mb-0">Стоимость оборудования: <span>625 000 руб</span></h5>
-					</div>
-				</div>
+						
+					<?php endwhile;
+					wp_reset_postdata();
+				?>
+				<?php endif; ?>
 				
 				<div class="text-center">
 					<button data-bs-toggle="modal" data-bs-target="#orderModal" class="btn btn-lg btn-corporate-color-1 mt-4">Рассчитать мою смету</button>
@@ -186,7 +127,113 @@
 		</div>
 	</div>
 </section>
-<!-- /Portfolio -->
+
+<!-- Portfolio Modals -->
+<?php
+if ($portfolio_query->have_posts()) :
+	$portfolio_query->rewind_posts();
+	$modal_counter = 0;
+	
+	while ($portfolio_query->have_posts()) : $portfolio_query->the_post();
+		$modal_counter++;
+		$post_id = get_the_ID();
+		
+		// Получаем изображения
+		$modal_images = array();
+		for ($i = 1; $i <= 9; $i++) {
+			$img_url = get_post_meta($post_id, '_img-' . $i, true);
+			if (!empty($img_url)) {
+				$modal_images[] = $img_url;
+			}
+		}
+		
+        if (has_post_thumbnail()) {
+            $thumbnail_id = get_post_thumbnail_id($post_id);
+            $modal_images[] = wp_get_attachment_image_url($thumbnail_id, 'full');
+        }
+		
+		$modal_images = array_slice($modal_images, 0, 9);
+		?>
+		
+		<!-- Modal <?php echo $modal_counter; ?> -->
+		<div class="modal fade" id="portfolioModal<?php echo $modal_counter; ?>" tabindex="-1" aria-labelledby="portfolioModalLabel<?php echo $modal_counter; ?>" aria-hidden="true">
+			<div class="modal-dialog modal-fullscreen">
+				<div class="modal-content" style="background: rgba(0,0,0,0.85);">
+					<div class="modal-header border-0">
+						<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body d-flex align-items-center justify-content-center p-0">
+						<div id="carouselModal<?php echo $modal_counter; ?>" class="carousel slide w-100 h-100" data-bs-ride="false" data-bs-interval="false">
+							<?php if (count($modal_images) > 1) : ?>
+								<div class="carousel-indicators">
+									<?php foreach ($modal_images as $img_index => $img_url) : ?>
+										<button type="button" data-bs-target="#carouselModal<?php echo $modal_counter; ?>" data-bs-slide-to="<?php echo $img_index; ?>" <?php echo $img_index === 0 ? 'class="active" aria-current="true"' : ''; ?> aria-label="Slide <?php echo $img_index + 1; ?>"></button>
+									<?php endforeach; ?>
+								</div>
+							<?php endif; ?>
+							
+							<div class="carousel-inner h-100">
+								<?php foreach ($modal_images as $img_index => $img_url) : ?>
+									<div class="carousel-item h-100 <?php echo $img_index === 0 ? 'active' : ''; ?>">
+										<div class="d-flex align-items-center justify-content-center h-100">
+											<img src="<?php echo esc_url($img_url); ?>" class="img-fluid" style="max-width: 90vw; max-height: 90vh; object-fit: contain;" alt="<?php echo esc_attr(get_the_title()); ?>">
+										</div>
+									</div>
+								<?php endforeach; ?>
+							</div>
+							
+							<?php if (count($modal_images) > 1) : ?>
+								<button class="carousel-control-prev" type="button" data-bs-target="#carouselModal<?php echo $modal_counter; ?>" data-bs-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Previous</span>
+								</button>
+								<button class="carousel-control-next" type="button" data-bs-target="#carouselModal<?php echo $modal_counter; ?>" data-bs-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Next</span>
+								</button>
+							<?php endif; ?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	<?php endwhile;
+	wp_reset_postdata();
+endif;
+?>
+
+<script>
+	// Скрипт для открытия модального окна на нужном слайде
+	document.addEventListener('DOMContentLoaded', function() {
+		// Обработчики для всех модальных окон портфолио
+		document.querySelectorAll('.portfolio-image-link').forEach(function(link) {
+			link.addEventListener('click', function(e) {
+				e.preventDefault();
+				
+				var modalId = this.getAttribute('data-bs-target');
+				var slideIndex = parseInt(this.getAttribute('data-slide-index'));
+				var carouselId = modalId.replace('portfolioModal', 'carouselModal');
+				
+				// Ждем открытия модального окна
+				var modalElement = document.querySelector(modalId);
+				modalElement.addEventListener('shown.bs.modal', function() {
+					var carouselElement = document.querySelector(carouselId);
+					var carousel = bootstrap.Carousel.getInstance(carouselElement);
+					
+					if (!carousel) {
+						carousel = new bootstrap.Carousel(carouselElement, {
+							interval: false
+						});
+					}
+					
+					carousel.to(slideIndex);
+				}, { once: true });
+			});
+		});
+	});
+</script>
+<!-- /Portfolio - All Cards Block -->
 
 
 <!-- Advantages -->

@@ -2396,3 +2396,14 @@ footer {
 .form-label {
 	font-family: HelveticaNeueCyr-Light;
 }
+
+.policy-in-footer a {
+	font-family: Gilroy-Light;
+	color: #f5f5f5;
+	font-size: 14px;
+}
+
+
+.modal {
+    z-index: 99999;
+}

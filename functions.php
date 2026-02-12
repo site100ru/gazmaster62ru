@@ -662,3 +662,6 @@ function echo_description()
 /*** END ДЕЛАЕМ ПРАВИЛЬНЫЙ DESCRIPTION ДЛЯ КАЖДОЙ СТРАНИЦЫ ***/
 
 require_once get_template_directory() . '/inc/transliteration.php';
+
+// Portfolio Custom Post Type
+require_once get_template_directory() . '/inc/portfolio/portfolio.php';

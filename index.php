@@ -168,181 +168,164 @@
 </section>
 <!-- /Archive cat product section -->
 
-
 <!-- Portfolio -->
 <div id="portfolio-sp" class="scroll-point"></div>
 <section class="portfolio bg-light py-5">
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<h2>Наши услуги</h2>
-				<!--p class="section-sutitle text-center mb-5"></p-->
-				<div class="section-title-decoration text-center mb-5"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/section-title-decoration-image.png"></div>
-				<div class="row mb-5">
-					<div class="col-md-6 mb-3 mb-md-0">
-						<div id="carouselExampleControls-1" class="carousel slide" data-bs-ride="false"  data-bs-interval="false">
-							<div class="carousel-inner shadow rounded">
-								<div class="carousel-inner shadow rounded">
-									<div class="carousel-item active">
-										<a onClick="galleryOn( 'gal-1', 'img-1-1' );">	
-											<div class="light">
-												<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/1-1.webp" class="d-block w-100" alt="...">
-												<div class="magnifier"></div>
-											</div>
-										</a>
-									</div>
-									<div class="carousel-item">
-										<a onClick="galleryOn('gal-1','img-1-2');">	
-											<div class="light">
-												<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/1-2.webp" class="d-block w-100 lazyload" loading="lazy" alt="...">
-												<div class="magnifier"></div>
-											</div>
-										</a>
-									</div>
-									<div class="carousel-item">
-										<a onClick="galleryOn('gal-1','img-1-3');">	
-											<div class="light">
-												<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/1-3.webp" class="d-block w-100 lazyload" loading="lazy" alt="...">
-												<div class="magnifier"></div>
-											</div>
-										</a>
-									</div>
-								</div>
-							</div>
-							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-1"  data-bs-slide="prev">
-								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-								<span class="visually-hidden">Previous</span>
-							</button>
-							<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-1"  data-bs-slide="next">
-								<span class="carousel-control-next-icon" aria-hidden="true"></span>
-								<span class="visually-hidden">Next</span>
-							</button>
-						</div>
-					</div>
-					
-					<div class="col-md-6">
-						<h3>Монтаж системы отопления в частном доме</h3>
-						<h5>Что сделано:</h5>
-						<ul>
-							<li>Монтаж котла Baxi.</li>
-							<li>Монтаж бойлера Drazice.</li>
-							<li>Монтаж насоса Grundfos.</li>
-							<li>Монтаж источника бесперебойного питания CyberPower.</li>
-							<li>Монтаж расширительных баков Reflex.</li>
-							<li>Монтаж запорной арматуры Stout Itap Watts.</li>
-							<li>Монтаж трубопровода Kalde.</li>
-						</ul>
-						<!--h5>Сроки выполнения работ: <span>61 день</span></h5>
-						<h5>Стоимость работ: <span>250 000 руб</span></h5>
-						<h5>Стоимость оборудования: <span>625 000 руб</span></h5-->
-					</div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>Наши работы</h2>
+				<div class="section-title-decoration text-center mb-5">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/ico/section-title-decoration-image.png" alt="Decoration">
 				</div>
-				
-				<div class="row mb-5">
-					<div class="col-md-6 mb-3 mb-md-0">
-						<div id="carouselExampleControls-2" class="carousel slide" data-bs-ride="false"  data-bs-interval="false">
-							<div class="carousel-inner shadow rounded">
-								<div class="carousel-inner shadow rounded">
-									<div class="carousel-item active">
-										<a onClick="galleryOn( 'gal-2', 'img-2-1' );">	
-											<div class="light">
-												<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-img-2.jpg" class="d-block w-100" alt="...">
-												<div class="magnifier"></div>
-											</div>
-										</a>
-									</div>
-									<div class="carousel-item">
-										<a onClick="galleryOn('gal-2','img-2-2');">	
-											<div class="light">
-												<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-img-3.jpg" class="d-block w-100 lazyload" loading="lazy" alt="...">
-												<div class="magnifier"></div>
-											</div>
-										</a>
-									</div>
-								</div>
-							</div>
-							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-2"  data-bs-slide="prev">
-								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-								<span class="visually-hidden">Previous</span>
-							</button>
-							<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-2"  data-bs-slide="next">
-								<span class="carousel-control-next-icon" aria-hidden="true"></span>
-								<span class="visually-hidden">Next</span>
-							</button>
-						</div>
-					</div>
-					
-					<div class="col-md-6">
-						<h3>Монтаж системы отопления в кирпичном доме 250 кв.м.</h3>
-						<h5>Что сделано:</h5>
-						<ul>
-							<li>Монтаж газового котла отопления</li>
-							<li>Монтаж системы водоочистки</li>
-							<li>Монтаж системы водоотведения</li>
-						</ul>
-						<h5>Сроки выполнения работ: <span>61 день</span></h5>
-						<h5>Стоимость работ: <span>250 000 руб</span></h5>
-						<h5>Стоимость оборудования: <span>625 000 руб</span></h5>
-					</div>
-				</div>
-				
-				<div class="row mb-5">
-					<div class="col-md-6 mb-3 mb-md-0">
-						<div id="carouselExampleControls-3" class="carousel slide" data-bs-ride="false"  data-bs-interval="false">
-							<div class="carousel-inner shadow rounded">
-								<div class="carousel-inner shadow rounded">
-									<div class="carousel-item active">
-										<a onClick="galleryOn( 'gal-3', 'img-3-1' );">	
-											<div class="light">
-												<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-img-3.jpg" class="d-block w-100" alt="...">
-												<div class="magnifier"></div>
-											</div>
-										</a>
-									</div>
-									<div class="carousel-item">
-										<a onClick="galleryOn('gal-3','img-3-2');">	
-											<div class="light">
-												<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-img-1.jpg" class="d-block w-100 lazyload" loading="lazy" alt="...">
-												<div class="magnifier"></div>
-											</div>
-										</a>
-									</div>
-								</div>
-							</div>
-							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-3"  data-bs-slide="prev">
-								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-								<span class="visually-hidden">Previous</span>
-							</button>
-							<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-3"  data-bs-slide="next">
-								<span class="carousel-control-next-icon" aria-hidden="true"></span>
-								<span class="visually-hidden">Next</span>
-							</button>
-						</div>
-					</div>
-					
-					<div class="col-md-6">
-						<h3>Монтаж системы отопления в кирпичном доме 250 кв.м.</h3>
-						<h5>Что сделано:</h5>
-						<ul>
-							<li>Монтаж газового котла отопления</li>
-							<li>Монтаж системы водоочистки</li>
-							<li>Монтаж системы водоотведения</li>
-						</ul>
-						<h5>Сроки выполнения работ: <span>61 день</span></h5>
-						<h5>Стоимость работ: <span>250 000 руб</span></h5>
-						<h5 class="mb-0">Стоимость оборудования: <span>625 000 руб</span></h5>
-					</div>
-				</div>
-				
-				<div class="text-center">
-					<a href="https://gazmaster62.ru/наши-работы/">Смотреть еще работы</a>
-					<br>
-					<button data-bs-toggle="modal" data-bs-target="#orderModal" class="btn btn-lg btn-corporate-color-1 mt-4">Рассчитать мою смету</button>
-				</div>
-			</div>
-		</div>
-	</div>
+                <?php
+                $portfolio_query = new WP_Query([
+                    'post_type'      => 'portfolio',
+                    'posts_per_page' => 3,
+                    'orderby'        => 'date',
+                    'order'          => 'DESC',
+                ]);
+
+                if ($portfolio_query->have_posts()) :
+                    $i = 0;
+                    while ($portfolio_query->have_posts()) : $portfolio_query->the_post();
+                        $i++;
+                        $post_id = get_the_ID();
+
+                        $images = [];
+                        for ($n = 1; $n <= 9; $n++) {
+                            $url = get_post_meta($post_id, '_img-' . $n, true);
+                            if ($url) $images[] = $url;
+                        }
+                        if (empty($images)) {
+                            $images[] = has_post_thumbnail()
+                                ? wp_get_attachment_image_url(get_post_thumbnail_id(), 'full')
+                                : get_template_directory_uri() . '/img/portfolio-img-' . (($i % 3) + 1) . '.jpg';
+                        }
+                        $images = array_slice($images, 0, 9);
+                        ?>
+
+                        <!-- Карточка -->
+                        <div class="row mb-5">
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <div id="carousel-<?= $i ?>" class="carousel slide" data-bs-ride="false">
+                                    <div class="carousel-inner shadow rounded">
+                                        <?php foreach ($images as $idx => $url) : ?>
+                                            <div class="carousel-item <?= $idx === 0 ? 'active' : '' ?>">
+                                                <a href="#" class="portfolio-image-link"
+                                                   data-bs-toggle="modal"
+                                                   data-bs-target="#modal-<?= $i ?>"
+                                                   data-slide="<?= $idx ?>">
+                                                    <div class="light">
+                                                        <img src="<?= esc_url($url) ?>"
+                                                             class="d-block w-100"
+                                                             <?= $idx > 0 ? 'loading="lazy"' : '' ?>
+                                                             alt="<?= esc_attr(get_the_title()) ?>">
+                                                        <div class="magnifier"></div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        <?php endforeach; ?>
+                                    </div>
+
+                                    <?php if (count($images) > 1) : ?>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-<?= $i ?>" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-<?= $i ?>" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    <?php endif; ?>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <h3><?php the_title(); ?></h3>
+                                <?php if (get_the_content()) : ?>
+                                    <?php the_content(); ?>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+
+                        <!-- Модалка -->
+                        <div class="modal fade" id="modal-<?= $i ?>" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog modal-fullscreen">
+                                <div class="modal-content" style="background: rgba(0,0,0,0.85);">
+                                    <div class="modal-header border-0">
+                                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body d-flex align-items-center justify-content-center p-0">
+                                        <div id="carousel-modal-<?= $i ?>" class="carousel slide w-100 h-100" data-bs-ride="false">
+                                            <?php if (count($images) > 1) : ?>
+                                                <div class="carousel-indicators">
+                                                    <?php foreach ($images as $idx => $url) : ?>
+                                                        <button type="button"
+                                                                data-bs-target="#carousel-modal-<?= $i ?>"
+                                                                data-bs-slide-to="<?= $idx ?>"
+                                                                <?= $idx === 0 ? 'class="active" aria-current="true"' : '' ?>></button>
+                                                    <?php endforeach; ?>
+                                                </div>
+                                            <?php endif; ?>
+
+                                            <div class="carousel-inner h-100">
+                                                <?php foreach ($images as $idx => $url) : ?>
+                                                    <div class="carousel-item h-100 <?= $idx === 0 ? 'active' : '' ?>">
+                                                        <div class="d-flex align-items-center justify-content-center h-100">
+                                                            <img src="<?= esc_url($url) ?>"
+                                                                 class="img-fluid"
+                                                                 style="max-width:90vw; max-height:90vh; object-fit:contain;"
+                                                                 alt="<?= esc_attr(get_the_title()) ?>">
+                                                        </div>
+                                                    </div>
+                                                <?php endforeach; ?>
+                                            </div>
+
+                                            <?php if (count($images) > 1) : ?>
+                                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-modal-<?= $i ?>" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button" data-bs-target="#carousel-modal-<?= $i ?>" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            <?php endif; ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <?php endwhile;
+                    wp_reset_postdata();
+                ?>
+                <?php endif; ?>
+
+                <div class="text-center">
+                    <a href="https://gazmaster62.ru/наши-работы/">Смотреть еще работы</a>
+                    <br>
+                    <button data-bs-toggle="modal" data-bs-target="#orderModal" class="btn btn-lg btn-corporate-color-1 mt-4">Рассчитать мою смету</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
+
+<script>
+document.querySelectorAll('.portfolio-image-link').forEach(link => {
+    link.addEventListener('click', e => {
+        e.preventDefault();
+        const modalEl = document.querySelector(link.dataset.bsTarget);
+        const slide   = parseInt(link.dataset.slide);
+        modalEl.addEventListener('shown.bs.modal', () => {
+            const carouselEl = modalEl.querySelector('.carousel');
+            (bootstrap.Carousel.getInstance(carouselEl) ?? new bootstrap.Carousel(carouselEl, { interval: false })).to(slide);
+        }, { once: true });
+    });
+});
+</script>
 <!-- /Portfolio -->
 
 
@@ -352,7 +335,7 @@
 	<div class="container py-0">
 		<div class="row align-items-center">
 			<div class="offset-xl-7 col-xl-5">
-				<h2 class="text-start">О нас</h2>
+				<h2 class="text-xxl-center">О нас</h2>
 				<!--p class="section-sutitle text-center mb-5"></p-->
 				<div class="section-title-decoration text-xxl-center mb-5"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/section-title-decoration-image.png"></div>
 				<p>Компания «Газмастер» является специализированным предприятием, работающим на рынке монтажа, обслуживания и ремонта систем отопления, водоснабжения и водоподготовки.</p>

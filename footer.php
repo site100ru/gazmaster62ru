@@ -180,6 +180,9 @@
 		                <div class="col text-center py-2">
 		                    <div id="company-in-footer">©<?php echo date('Y'); ?> ООО «Орион» | ИНН 6229039979</div>
 		                    <div id="im-in-footer">Создание и продвижение сайтов: <a href="https://site100.ru" class="text-light">site100.ru</a></div>
+                        <div class="policy-in-footer">
+                            <a href="<?php echo get_template_directory_uri(); ?>/docs/Privacy-Policy.pdf" target="_blank">Политика конфиденциальности</a> | <a href="https://dekorsever.ru/wp-content/themes/dekorsever-wp/docs/Consent-to-the-processing-of-personal-data.pdf" target="_blank">Согласие на обработку персональных данных</a>
+                        </div>
 		                </div>
 		            </div>
 		        </div>
@@ -314,27 +317,19 @@
 		        <div class="carousel-indicators">
 		            <button id="ind-1-1" class="carouselIndicator carouselIndicatorClass" type="button" data-bs-target="#gallery-1" data-bs-slide-to="0" aria-label="Slide 1"></button>
 		            <button id="ind-1-2" class="carouselIndicator carouselIndicatorClass" type="button" data-bs-target="#gallery-1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-					<button id="ind-1-2" class="carouselIndicator carouselIndicatorClass" type="button" data-bs-target="#gallery-1" data-bs-slide-to="2" aria-label="Slide 3"></button>
 		        </div>
 		        <div class="carousel-inner h-100">
 		            <div id="item-1-1" class="carousel-item carouselItemClass h-100">
 		                <div class="row align-items-center h-100">
 		                    <div class="col text-center">
-		                        <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/1-1.webp" class="img-fluid" style="max-width: 75vw; max-height: 75vh;">
+		                        <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-img-1.jpg" class="img-fluid" style="max-width: 75vw; max-height: 75vh;">
 		                    </div>
 		                </div>
 		            </div>
 		            <div id="item-1-2" class="carousel-item carouselItemClass h-100">
 		                <div class="row align-items-center h-100">
 		                    <div class="col text-center">
-		                        <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/1-2.webp" class="img-fluid" style="max-width: 75vw; max-height: 75vh;">
-		                    </div>
-		                </div>
-		            </div>
-					<div id="item-1-3" class="carousel-item carouselItemClass h-100">
-		                <div class="row align-items-center h-100">
-		                    <div class="col text-center">
-		                        <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio/1-3.webp" class="img-fluid" style="max-width: 75vw; max-height: 75vh;">
+		                        <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-img-2.jpg" class="img-fluid" style="max-width: 75vw; max-height: 75vh;">
 		                    </div>
 		                </div>
 		            </div>
